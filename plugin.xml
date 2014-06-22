@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+id="com.kochava.sdk" version="0.0.1">
+	<name>Kochava</name>
+	<description>Kochava plugin for Cordova</description>
+	<license>MIT License</license>
+	<keywords>kochava</keywords>
+	<author>Nerdeez LTD</author>
+	
+	<engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+    
+	<js-module src="www/kochava.js" name="Kochava">
+        <clobbers target="Kochava" />
+    </js-module>
+	
+	<!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Kochava">
+                <param name="ios-package" value="KochavaCordova"/>
+                <param name="onload" value="true" />
+          </feature>
+        </config-file>
+        
+		<framework src="SystemConfiguration.framework" />        
+        <framework src="UIKit.framework" />
+        <framework src="Foundation.framework" />
+        <framework src="AdSupport.framework" />
+        <framework src="iAd.framework" />
+        <framework src="src/ios/libTrackAndAd.a" custom="true" />
+        
+        <header-file src="src/ios/KochavaCordova.h" />
+        <source-file src="src/ios/KochavaCordova.m" />
+        <header-file src="src/ios/TrackAndAd.h" />
+        
+    </platform>
+	
+</plugin>
