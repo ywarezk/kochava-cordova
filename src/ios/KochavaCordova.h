@@ -4,6 +4,7 @@
 //
 //  Created by Yariv Katz on 06/22/14.
 //  Copyright (c) 2014 Nerdz LTD All rights reserved.
+//  Website: http://www.nerdeez.com
 //
 
 #import <Cordova/CDV.h>
