@@ -19,7 +19,7 @@
     NSDictionary *initDict = [NSDictionary dictionaryWithObjectsAndKeys:
                               appToken, @"kochavaAppId",
                               nil];
-    kochavaTracker = [[KochavaTracker alloc] initKochavaWithParams:dictionary of parameters];
+    kochavaTracker = [[KochavaTracker alloc] initKochavaWithParams:initDict];
     
 }
 
