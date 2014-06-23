@@ -21,7 +21,7 @@ id="com.kochava.sdk" version="0.0.1">
             <feature name="Kochava">
                 <param name="ios-package" value="KochavaCordova"/>
                 <param name="onload" value="true" />
-          </feature>
+          	</feature>
         </config-file>
         
 		<framework src="SystemConfiguration.framework" />        
