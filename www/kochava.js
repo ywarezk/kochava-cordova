@@ -20,6 +20,9 @@ var Kochava= {
     },
     initializeKochava: function (appToken) {
         this.callCordova('initializeKochava', appToken);
+    },
+    trackEvent: function (viewToken, eventToken) {
+        this.callCordova('trackEvent', viewToken, eventToken);
     }
 };
 

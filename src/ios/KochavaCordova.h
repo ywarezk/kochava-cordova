@@ -13,6 +13,7 @@
 @interface KochavaCordova : CDVPlugin
 
 - (void)initializeKochava:(CDVInvokedUrlCommand *)command;
+- (void)trackEvent:(CDVInvokedUrlCommand *)command;
 
 @property(readonly) KochavaTracker *kochavaTracker;
 

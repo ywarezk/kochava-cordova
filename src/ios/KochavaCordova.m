@@ -23,4 +23,10 @@
     
 }
 
+- (void)trackEvent:(CDVInvokedUrlCommand *)command {
+    NSString *viewToken = [command.arguments objectAtIndex:0];
+    NSString *eventToken = [command.arguments objectAtIndex:1];
+    [kochavaTracker trackEvent:viewToken :eventToken];
+}
+
 @end
