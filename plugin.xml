@@ -24,11 +24,11 @@ id="com.kochava.sdk" version="0.0.1">
           	</feature>
         </config-file>
         
-		<framework src="SystemConfiguration.framework" />        
-        <framework src="UIKit.framework" />
-        <framework src="Foundation.framework" />
-        <framework src="AdSupport.framework" />
-        <framework src="iAd.framework" />
+		<framework src="SystemConfiguration.framework" weak="true"/>        
+        <framework src="UIKit.framework" weak="true" />
+        <framework src="Foundation.framework" weak="true" />
+        <framework src="AdSupport.framework" weak="true" />
+        <framework src="iAd.framework" weak="true" />
         <framework src="src/ios/libTrackAndAd.a" custom="true" />
         
         <header-file src="src/ios/KochavaCordova.h" />
